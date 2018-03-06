@@ -9,8 +9,8 @@
 
   <properties>
     <project.encoding>UTF-8</project.encoding>
-    <project.build.sourceEncoding>`${project.encoding}</project.build.sourceEncoding>
-    <project.resources.sourceEncoding>`${project.encoding}</project.resources.sourceEncoding>
+    <project.build.sourceEncoding>\${project.encoding}</project.build.sourceEncoding>
+    <project.resources.sourceEncoding>\${project.encoding}</project.resources.sourceEncoding>
     <jdk.version>1.8</jdk.version>
   </properties>
 
@@ -36,9 +36,9 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.7.0</version>
         <configuration>
-          <source>`${jdk.version}</source>
-          <target>`${jdk.version}</target>
-          <encoding>`${project.encoding}</encoding>
+          <source>\${jdk.version}</source>
+          <target>\${jdk.version}</target>
+          <encoding>\${project.encoding}</encoding>
         </configuration>
       </plugin>
     </plugins>
